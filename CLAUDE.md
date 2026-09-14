@@ -17,11 +17,20 @@ Nailhammer: a side-scrolling iOS game where you hit nails with a hammer.
 Design gaps: placeholder + `// DESIGN-OPEN:` only. Never invent mechanics, rates, or names.
 
 ## Hard rules
-{{HARD_RULES}}
+1. One finger only; no buttons during play.
+2. The strike arc is fixed — same every time. Never variable.
+3. Whiffs never fail the player; only missed/bent nails do.
+4. Restart ≤ 500 ms.
+5. No text jokes on screen — comedy is motion and sound.
+6. No pay-to-win, energy, lives, or in-level ads.
+7. Never invent a mechanic — `// DESIGN-OPEN` placeholder, flag in PR.
+8. Game logic stays pure and framework-free (state + updaters); render/input are thin layers, so a native port stays possible.
+9. Every number ships with a unit test asserting it.
 
 ## Code conventions
 - App in `app/` (Vite + React 19 + TypeScript, StrictMode on; Capacitor iOS wrap later). Keep `npm run dev` / `npm run build` / `npm test` / `npm run lint` runnable — CI runs all four on every PR and PRs must be green before merge.
 - One full-screen `<canvas>` (`app/src/GameCanvas.tsx`) is the whole game surface. Input is Pointer Events only (no separate mouse/touch handlers); track pointers by `pointerId`.
+- Game core is pure TS in `app/src/game/` (no React, no canvas, no `Date.now()` — time is passed in); `app/src/input/` and `app/src/render/` are thin layers (NEVER #8).
 - Mobile-portrait-first (390×844). No new deps without a reason.
 - Tests: Vitest, `*.test.ts(x)` next to the code. Every brief that sets a number or rule ships with a test asserting it.
 - Phone playtest: `npm run dev:phone` and open the Network URL on the iPhone (README → "Dev on phone").
