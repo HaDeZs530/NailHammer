@@ -9,7 +9,7 @@
 1. (none yet)
 
 ## Recently DONE
-- (none)
+- **2026-09-14 — PR #1 Scaffold** (Claude Code): Vite + React 19 + TS app, full-screen canvas + FPS counter, Vitest, ESLint, CI, phone dev docs. Not a Design-Chat brief; ran from Tony's setup instructions.
 
 ## Still OPEN (design)
 - (see design doc §OPEN)
