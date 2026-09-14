@@ -1,7 +1,7 @@
 # CLAUDE.md — Nailhammer Project Instructions
 
 ## What this project is
-Nailhammer: `// DESIGN-OPEN: one-line concept — Design Chat to fill from the design doc §1`.
+Nailhammer: a side-scrolling iOS game where you hit nails with a hammer.
 
 ## Agent split
 - **Claude Design Chat** (claude.ai Project "Nailhammer — Design") = design authority: locks, design-doc edits, briefs in `docs/CLAUDE_BRIEFS/`, session log, audits of code vs locks.
@@ -17,7 +17,7 @@ Nailhammer: `// DESIGN-OPEN: one-line concept — Design Chat to fill from the d
 Design gaps: placeholder + `// DESIGN-OPEN:` only. Never invent mechanics, rates, or names.
 
 ## Hard rules
-- `// DESIGN-OPEN:` hard rules come from the design doc §10 NEVER list once it exists. Until then: never invent mechanics, rates, or names.
+{{HARD_RULES}}
 
 ## Code conventions
 - App in `app/` (Vite + React, JS; Capacitor iOS wrap later). Keep `npm run dev` / `npm run build` runnable.
