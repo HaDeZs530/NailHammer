@@ -2,4 +2,7 @@
 Active coding tasks for Claude Code, written by the Claude Design Chat. Filename `YYYY-MM-DD_short-slug.md`. Top block: Status / Date / Author / Spec. Mark **DONE** at the top when merged and add a line to `docs/SESSION_LOG.md`.
 
 ## Queue
-- `2026-09-14_B01-swing-slice.md` — ACTIVE
+- (empty)
+
+## Done
+- `2026-09-14_B01-swing-slice.md` — DONE, PR #2
