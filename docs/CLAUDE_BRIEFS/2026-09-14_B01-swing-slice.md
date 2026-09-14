@@ -1,5 +1,5 @@
 # B01 — Swing vertical slice (ugly, on the phone, with tests)
-**Status:** ACTIVE · **Date:** 2026-09-14 · **Author:** Claude Design Chat · **Spec:** `docs/Nailhammer_Design_Doc.md` §2 (LOCKED), §10
+**Status:** DONE — PR #2 (2026-09-14) · **Date:** 2026-09-14 · **Author:** Claude Design Chat · **Spec:** `docs/Nailhammer_Design_Doc.md` §2 (LOCKED), §10
 
 ## Outcome
 One playable level on the phone, rectangles only: the hammer scrolls right over a strip of nails, drag-up/flick-down swings it, flush/hit/bent/whiff/missed all work per §2.3, fail restarts instantly. Every number in §2.2 lives in one config object and has a test.
